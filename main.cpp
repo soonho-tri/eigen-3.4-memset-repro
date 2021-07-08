@@ -1,3 +1,8 @@
+// Taken from
+// https://github.com/jwnimmer-tri/drake/blob/eigen-34-debug-wip/common/test/eigen_svd_test.cc
+//
+// Authored by Jeremy Nimmer (Toyota Research Institute).
+//
 #include <cmath>
 #include <memory>
 
