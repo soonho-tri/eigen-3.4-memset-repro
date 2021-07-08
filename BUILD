@@ -1,5 +1,5 @@
 cc_binary(
-    name = "EigenDemo",
+    name = "main",
     srcs = ["main.cpp"],
     deps = [
         "@eigen",

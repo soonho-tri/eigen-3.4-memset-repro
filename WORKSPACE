@@ -1,13 +1,12 @@
 workspace(name = "EigenDemo")
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "new_git_repository")
 
-http_archive(
+new_git_repository(
     name = "eigen",
     build_file = "//:eigen.BUILD",
-    sha256 = "d7bcd550b5dfc661d2a0f0076a5a957080c1834ef4d057f15f8a0026bf99bcaf",
-    strip_prefix = "eigen-3.4",
-    urls = [
-        "https://gitlab.com/libeigen/eigen/-/archive/3.4/eigen-3.4.tar.gz",
-    ],
+    commit = "e9c9a3130b7307a240335aa527a6d4c5fb2ee471",
+    # commit = "4780d8dfb2b0e9bcff063c80f4ffce71d9d7a725",
+    remote = "https://gitlab.com/libeigen/eigen.git",
+    shallow_since = "1624302437 +0000",
 )
